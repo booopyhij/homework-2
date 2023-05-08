@@ -1,0 +1,37 @@
+/* this is a universal selector making box sizes border-box with no padding or margin */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    justify-content: left;
+    line-height: 3rem;
+    box-sizing: content-box;
+    margin: 0;
+    padding: .5rem;
+    color: white;
+    background-color: blue;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    justify-content: end;
+    font-size: 2rem;
+    text-underline-position: below;
+    -ms-text-underline-position: alphabetic;
+
+}
+
+.main-header {
+    display: flex;
+    /* Forces elements to the next line if they don't fit */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px;
+    background: blue;
+    color: white;
+  }
