@@ -72,6 +72,14 @@
     height: 300px;
   }
   
+  ul li {
+    background-color: var(--secondary) ;
+    color: var(--light);
+    margin: 5px;
+
+  }
+
+
   .img-2{
     justify-content: flex-start;
     flex: auto;
