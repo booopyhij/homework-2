@@ -64,6 +64,7 @@
     margin-bottom: 45px;
   }
 
+
   img {
     border: 1rem;
     border-radius: 7px;
@@ -85,6 +86,9 @@
     flex: auto;
     flex-wrap: wrap;
   }
+
+
+
 
   .hero-banner {
     background: rgb(68, 88, 120);
