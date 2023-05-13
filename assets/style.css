@@ -9,10 +9,11 @@
     --tertiary: rgb(117, 29, 29);
     --dark: rgb(36, 39, 34);
     --light: rgba(238, 238, 247, 1);
-    --media1: blue;
+    --media1: tan;
     --media2: orange;
   }
   
+  /* setting the body colors and fonts */
   body {
     margin: 0;
     padding: 0;
@@ -22,6 +23,7 @@
     line-height: 1.5;
   }
   
+  /* Setting header margin to 0 */
   h1,
   h2,
   h3,
@@ -31,10 +33,12 @@
     margin: 0;
   }
   
+  /* setting paragraph margin to 0*/
   p {
     margin: 0;
   }
   
+  /* setting the standard for the header element */
   header {
     padding: 15px 6% 15px 0;
     display: flex;
@@ -46,6 +50,7 @@
     box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
   }
   
+  /* setting more specific calls for h1 inside of the header */
   header h1 {
     color: var(--tertiary);
     background-color: var(--secondary);
@@ -55,24 +60,29 @@
     line-height: 1;
   }
 
+  /*  setting specific style for the a element that is nested in nav 
+  located in the header*/
   header nav a {
     margin-left: 10px;
     color: black;
     font-size: 1.8rem;
   }
   
+  /* creating a responsive reaction for the nav elemenr*/
   nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
   
+  /* setting the margin for the main element */
   main {
     margin-top: 20px;
     margin-bottom: 45px;
   }
 
 
+  /* creating the base perametings for the img element */
   img {
     border: 1rem;
     border-radius: 7px;
@@ -81,40 +91,55 @@
     height: 300px;
   }
   
-  ul li {
-    background-color: var(--secondary) ;
-    color: var(--light);
-    margin: 5px;
 
-  }
-
-
+  /* This class is to maipulate the movement of an individual img */
   .img-2{
     justify-content: flex-start;
     flex: auto;
     flex-wrap: wrap;
   }
 
+  /* this class is made to manipulate the background color display and box-shadow
+  of a specific div tag */
   .div-a {
     background-image: url('../images/preworkstudyguide.png');
     width: 900px;
     height: 590px;
     margin: 10px;
    display: flex;
-
+   box-shadow: 0 0 10px 5px #48abe0,
+               0 0 20px 5px #ebecca,
+               0 0 25px 20px #8a2be2,
+               0 0 30px 20px #ff1493;
   }
 
+/* this class is doing the same as the one above just applying to a 
+different div tag */
   .div-b {
     background-image: url('../images/Homework1.png');
     width: 600px;
     height: 400px;
     margin: 10px;
    display: flex;
+   box-shadow: 0 0 10px 5px #48abe0,
+               0 0 20px 5px #ebecca,
+               0 0 25px 20px #8a2be2,
+               0 0 30px 20px #ff1493;
   }
 
+  /* this is creating a red hover for both div-a and div-b */
+  .div-a:hover {
+  background: url('./images/preworkstudyguide.png') red;
+  
+ }
+
+  .div-b:hover {
+  background: url('/images/Homework1.png') red;
+ }
+
+/* this class is creating a banner that goes across the webpage */
   .hero-banner {
     background: rgb(68, 88, 120);
-    background-image: url('../images/02-hero-bg.jpg'), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
     background-size: cover;
     background-position: center;
     background-blend-mode: soft-light;
@@ -188,7 +213,19 @@
     color: var(--secondary);
   }
   
-  @media screen and (min-width: 992px) {
+  /* these are media queries so the site is responive to changing to tablet and mobile devices 
+  respively */
+  @media screen and (max-width: 992px) {
+    body {
     background-color: var(--media1);
-    
+    flex: auto;
+    flex-wrap: wrap;
+  }
+}
+
+  @media  screen and (max-width: 768px) {
+    body {
+    background-color: var(--media2);
+    flex-direction: wrap;
+    }
   }
