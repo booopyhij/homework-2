@@ -9,6 +9,8 @@
     --tertiary: rgb(117, 29, 29);
     --dark: rgb(36, 39, 34);
     --light: rgba(238, 238, 247, 1);
+    --media1: blue;
+    --media2: orange;
   }
   
   body {
@@ -52,6 +54,12 @@
     font-size: 4vw;
     line-height: 1;
   }
+
+  header nav a {
+    margin-left: 10px;
+    color: black;
+    font-size: 1.8rem;
+  }
   
   nav {
     display: flex;
@@ -87,8 +95,22 @@
     flex-wrap: wrap;
   }
 
+  .div-a {
+    background-image: url('../images/preworkstudyguide.png');
+    width: 900px;
+    height: 590px;
+    margin: 10px;
+   display: flex;
 
+  }
 
+  .div-b {
+    background-image: url('../images/Homework1.png');
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+   display: flex;
+  }
 
   .hero-banner {
     background: rgb(68, 88, 120);
@@ -100,7 +122,7 @@
     color: var(--light);
     padding: 2% 6%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: flex-end;
     text-align: right;
   }
@@ -166,3 +188,7 @@
     color: var(--secondary);
   }
   
+  @media screen and (min-width: 992px) {
+    background-color: var(--media1);
+    
+  }
