@@ -127,6 +127,22 @@ different div tag */
                0 0 30px 20px #ff1493;
   }
 
+  
+/* this class is doing the same as the one above just applying to a 
+different div tag */
+.div-c {
+  background-image: url('../images/nebulas_fables.png.png');
+  width: 900px;
+  height: 590px;
+  margin: 10px;
+ display: flex;
+ box-shadow: 0 0 10px 5px #48abe0,
+             0 0 20px 5px #ebecca,
+             0 0 25px 20px #8a2be2,
+             0 0 30px 20px #ff1493;
+}
+
+
   /* this is creating a red hover for both div-a and div-b */
   .div-a:hover {
   background: url('./images/preworkstudyguide.png') red;
